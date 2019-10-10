@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link 
+      rel="stylesheet" 
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+    <title>Lancer - Review Invoice</title>
+
+    <style>
+      /*css styles go here*/
+  
+/* font-size: 40px;
+line-height: 46px; */
+      body{
+        background-color: #F2F3F3;
+        font-family: Ubuntu;
+        font-style: normal;
+      }
+
+      .biem-address-section{
+        margin: 30px 5px;
+      }
+
+      .biem-glacier{
+        font-weight: 800
+      }
+
+      .biem-capital{
+        margin-top: -3px;
+      }
+
+      .biem-country, .biem-capital{
+        line-height: 5px;
+      }
+
+      .biem-amount-due{
+        font-weight: bold;
+        color: #B1B1B1;
+      }
+
+      .biem-usDollar{
+        margin-top: -13px;
+        font-size: 40px;
+        font-weight: 800;
+        /* line-height: 3px */
+      }
+
+      sub {
+        font-size: 17px;
+      }
+
+      .biem-subscript{
+        margin-left: -10px
+      }
+
+      .biem-issue-due{
+        font-weight: bold;
+        margin-top: -15px
+        /* font-size: 20px; */
+       
+      }
+
+      .biem-pay-now{
+        padding: 5px 0px;
+        background-color: #0ABAB5;
+        border: 1px solid #0ABAB5;
+        color: #ffffff;
+        font-size: 28px;
+      }
+
+      /* media queries */
+      @media screen and (min-width: 600px){
+        .invoice-top{
+          margin: 30px 50px;
+        }
+      }
+
+      @media screen and (min-width: 768px){
+        .invoice-top{
+          margin: 30px 100px;
+        }
+        .biem-pay-now{
+          width: 95%
+        }
+      }
+
+      @media screen and (min-width: 992px){
+        .invoice-top{
+          margin: 30px 100px;
+        }
+        .biem-pay-now{
+          width: 85%
+        }
+      }
+
+      @media screen and (min-width: 1080px){
+        .biem-pay-now{
+          width: 75%
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!--main page nav goes here-->
+      </nav>
+    </header>
+
+    <main>
+      <nav class="invoice-navbar">
+        <!--"edit invoice" btn and "invoice setting" go here-->
+      </nav>
+
+      <!--top part of invoice-->
+      <div class="row biem-address-section invoice-top">
+        <!--invoice address goes here-->
+        <div class="col-4 col-sm-6 address">
+          <p class="biem-glacier"> Glacier Inc </p>
+          <p class="biem-capital"> Abuja, FCT</p>
+          <p class="biem-country">Nigeria</p>
+        </div>
+        <!--invoice amount, "pay now" btn etc goes here-->
+        <div class="col-8 col-sm-6 invoice-amount">
+          <p class="biem-amount-due">Amount Due</p>
+          <p class="biem-usDollar"><span>US$8,800.00 </span> <span class="biem-subscript"><sub> <strong>USD</strong> </sub></span> </p>
+          <div class="row biem-issue-due">
+            <div class="col-5"> <span class="biem-amount-due">Issued</span> <br> 02/10/2019 </div>
+            <div class="col-7"> <span class="biem-amount-due">Due</span>  <br> Upon Completion </div>
+          </div>
+          <button type="button" class="col-12 mt-3 biem-pay-now">Pay now</button>
+        </div>
+      </div>
+
+      <!--bottom part of invoice-->
+      <div class="invoice-bottom">
+        <div class="invoice-name">
+          <h2>Invoice No</h2>
+          <p>Glacier Fintech App</p>
+        </div>
+
+        <table>
+          <!--invoice breakdown goes here-->
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <p>Juliet Asim</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+<!--============================================DESIGN DETAILS=================================================-->
+
+<!--
+  ===BODY DETAILS===
+  body bg color: #F2F3F3;
+-->
+
+<!--
+  ===MAIN NAV DETAILS===
+  nav icons bg color: #c4c4c4
+  nav text color: #262626;
+  send invoice bg color: #0ABAB5;
+  send invoice text color: #fff / white;
+-->
+
+<!--======================================INVOICE DETAILS==================================-->
+<!--
+  invoice bg color: #fff;
+
+-->
