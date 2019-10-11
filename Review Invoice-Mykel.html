@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
+
+    <title>Lancer - Review Invoice</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Ubuntu;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: #f2f3f3;
+      }
+span { text-transform: uppercase;
+        font-size: 1rem;
+        align-self: flex-end;
+		 color: #b1b1b1;}
+		 
+ table {
+        width: 100%;
+        margin: 2rem auto 10rem;
+        border-collapse: collapse;
+      }
+      thead th,
+      tbody tr:first-child td {
+        padding: 1rem 1rem 1rem 0;
+      }
+      tbody tr:not(:first-child) td,
+      tbody tr:not(:first-child) th {
+        padding: 0.3rem 0;
+      }
+      table thead th,
+      table .bordered td {
+        border-bottom: 1px solid #b1b1b1;
+      }
+      table tr {
+        text-align: left;
+        font-size: 1rem;
+      }
+      /*footer styles*/
+      footer {
+        padding: 1rem;
+        font-size: 1rem;
+        border-top: 1px solid #b1b1b1;
+      }
+
+  @media screen and (min-width: 250px) and (max-width: 500px) {
+        table {
+          font-size: 1rem;
+          margin-left: .5rem;
+        }
+      }	  
+</style>
+	  <body>
+    <div class="invoice-bottom">
+          <div class="invoice-name">
+            <h2>Invoice <span>No. 1</span></h2>
+            <p>Glacier Fintech App</p>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="bordered">
+                <td>Mobile App UI</td>
+                <td>1</td>
+                <td>US$8,800</td>
+                <td>US$8,800</td>
+              </tr>
+              <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <th>Subtotal</th>
+                <td>US$8,800</td>
+              </tr>
+              <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <th>Total</th>
+                <td>US$8,800</td>
+              </tr>
+              <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <th>Amount Due</th>
+                <td>US$8,800</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <footer>
+          <p>Juliet Asim</p>
+        </footer>
+      	</body>
+       </html>		
